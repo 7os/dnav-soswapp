@@ -1,0 +1,27 @@
+{
+    "name": "7os/web-dnav",
+    "description": "7 OS Web - Drag Navigation",
+    "keywords": ["css", "javascript","7","seven","os","web","drag", "nav", "dnav"],
+    "homepage": "https://github.com/7os/web-dnav",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ikechukwu Okalia",
+            "email": "me@sirlouis.io"
+        },
+        {
+            "name": "Tym Frontiers Ltd.",
+            "email": "dev@tymfrontiers.com"
+        }
+    ],
+    "require": {
+      "7os/jquery" : ">=0.1@stable",
+      "7os/web-theme" : ">=0.1@stable",
+      "7os/js-generic" : ">=0.1@stable"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {}
+    }
+}

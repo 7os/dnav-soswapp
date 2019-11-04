@@ -1,0 +1,20 @@
+{
+  "name" : "7os/web-dnav",
+  "expression" : [
+    {
+      "regex" : "^7os/web-app/?$",
+      "path" : "/",
+      "flag" : ["QSA","NC","L"]
+    },
+    {
+      "regex" : "^7os/web-app/([a-zA-Z0-9\\-]{3,})/?$",
+      "path" : "/pages/$1.php",
+      "flag" : ["QSA","NC","L"]
+    },
+    {
+      "regex" : "^7os/web-app/(.*)$",
+      "path" : "/$1",
+      "flag" : ["QSA","NC","L"]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+/*! 7OS -Web dnav: https://github.com/7os/web-dnav
+    Requires 7os/web-theme available @ https://github.com/7os/web-theme
+*/
+@import "fn";
+$dnav-height : 65px;
+
+#sos-dnav{
+  font-family: inherit;
+  position: sticky;
+  left: 0;
+  width: 100%;
+  display: block;
+  background-color: darken(#ecf0f1,5%);
+  height: $dnav-height;
+  overflow: hidden;
+  overflow-x: auto;
+  z-index: 200;
+  @include drop-shadow(#A9A9A9);
+  &.relative{ position: relative; }
+  &.affix{
+    position: fixed;
+    top: -80px;
+    opacity: 0;
+  }
+  &.fixed{
+    position: fixed;
+    top:0;
+    opacity: 0;
+  }
+  ul{
+    min-width: 120%;
+    display: block;
+    position: relative;
+    padding: 0 40px 0 40px;
+    margin: 0;
+    list-style: none;
+    li{
+      float: left;
+      padding: 0;
+      margin: 0;
+      height: $dnav-height;
+      font-size: 1.25em;
+      font-family: inherit;
+      @include animate-all;
+      &.btn{
+        text-align: center;
+        background-color: inherit;
+        & a{
+          width: $dnav-height - 15;
+          height: $dnav-height - 15;
+          @include border-radius(100%);
+          -webkit-box-shadow: none !important;
+          -moz-box-shadow: none !important;
+          box-shadow: none !important;
+          padding: 16px;
+          margin: 8.5px;
+        }
+      }
+      a {
+        height: 100%;
+        width: 100%;
+        color: inherit;
+        display: block;
+        padding: 24px 15px;
+        &:hover{
+          color: inherit;
+          background-color: darken(#ecf0f1,8%);
+        }
+      }
+      &.current-nav a{
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        border-bottom-color: inherit;
+        padding-top:22.5px;
+        padding-bottom:22.5px;
+      }
+    }
+  }
+  #scroll-left, #scroll-right{
+    position: absolute;
+    height: $dnav-height;
+    width: 45px;
+    top: 0;
+    font-family: 'Black Tie';
+    font-size: 1.5em;
+    padding: 17px 12px;
+    font-weight: lighter;
+    margin: 0;
+    display: none;
+    opacity: 0;
+    z-index: 200;
+    background-color: rgba(#edeeee,0.6);
+    @include animate-all;
+    &:hover{
+      background-color: #edeeee;
+      cursor: pointer;
+    }
+  }
+  #scroll-left{
+    left: 0;
+    &::after{
+      content: '\F092';
+    }
+  }
+  #scroll-right{
+    right: 0;
+    &::after{
+      content: '\F093';
+    }
+  }
+
+}
+#sos-dnav-wrap{
+  height: $dnav-height + 17;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+@media only screen and (min-width: 81em) {
+  #sos-dnav.show-direction:hover #scroll-left,
+  #sos-dnav.show-direction:hover #scroll-right{
+    display: block !important;
+    opacity: 1 !important;
+  }
+}
