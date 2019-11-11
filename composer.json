@@ -1,8 +1,8 @@
 {
-    "name": "7os/web-dnav",
+    "name": "7os/dnav-soswapp",
     "description": "7 OS Web - Drag Navigation",
     "keywords": ["css", "javascript","7","seven","os","web","drag", "nav", "dnav"],
-    "homepage": "https://github.com/7os/web-dnav",
+    "homepage": "https://github.com/7os/dnav-soswapp",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -16,9 +16,9 @@
         }
     ],
     "require": {
-      "7os/jquery" : ">=0.1@stable",
-      "7os/web-theme" : ">=0.1@stable",
-      "7os/js-generic" : ">=0.1@stable"
+      "7os/jquery-soswapp" : ">=0.1@stable",
+      "7os/theme-soswapp" : ">=0.1@stable",
+      "7os/js-generic-soswapp" : ">=0.1@stable"
     },
     "require-dev": {},
     "autoload": {

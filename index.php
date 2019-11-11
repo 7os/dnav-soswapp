@@ -12,12 +12,12 @@ require_once APP_BASE_INC;
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
     <meta name="robots" content='nofollow'>
     <!-- Theming styles -->
-    <link rel="stylesheet" href="<?php echo WHOST; ?>/7os/web-theme/css/web-theme.min.css">
-    <link rel="stylesheet" href="<?php echo WHOST; ?>/7os/web-theme/css/web-theme-<?php echo PRJ_THEME; ?>.min.css">
+    <link rel="stylesheet" href="<?php echo WHOST; ?>/7os/theme-soswapp/css/theme.min.css">
+    <link rel="stylesheet" href="<?php echo WHOST; ?>/7os/theme-soswapp/css/theme-<?php echo PRJ_THEME; ?>.min.css">
     <!-- optional plugin -->
-    <!-- <link rel="stylesheet" href="css/web-plugin/web-plugin.css">
-    <link rel="stylesheet" href="css/web-dnav/web-dnav.css">
-    <link rel="stylesheet" href="css/web-fader-box/web-fader-box.css"> -->
+    <!-- <link rel="stylesheet" href="css/plugin-soswapp/plugin-soswapp.css">
+    <link rel="stylesheet" href="css/dnav-soswapp/dnav-soswapp.css">
+    <link rel="stylesheet" href="css/faderbox-soswapp/faderbox-soswapp.css"> -->
     <!-- Project styling -->
     <link rel="stylesheet" href="<?php echo \html_style("base.css"); ?>">
   </head>
@@ -30,7 +30,7 @@ require_once APP_BASE_INC;
           <h2>Resource list</h2>
           <ul>
             <li>
-              <h4>/7os/web-theme/web-theme.css</h4>
+              <h4>/7os/theme-soswapp/theme-soswapp.css</h4>
               <p>CSS file</p>
             </li>
           </ul>
@@ -42,13 +42,13 @@ require_once APP_BASE_INC;
     </section>
     <?php include PRJ_INC_FOOTER; ?>
     <!-- Required scripts -->
-    <script src="<?php echo WHOST; ?>/7os/jquery/js/jquery.min.js">  </script>
-    <script src="<?php echo WHOST; ?>/7os/js-generic/js/js-generic.min.js">  </script>
-    <script src="<?php echo WHOST; ?>/7os/web-theme/js/web-theme.js"></script>
+    <script src="<?php echo WHOST; ?>/7os/jquery-soswapp/js/jquery.min.js">  </script>
+    <script src="<?php echo WHOST; ?>/7os/js-generic-soswapp/js/js-generic.min.js">  </script>
+    <script src="<?php echo WHOST; ?>/7os/theme-soswapp/js/theme.js"></script>
     <!-- optional plugins -->
-    <!-- <script src="<?php //echo WHOST; ?>/7os/web-plugin/js/web-plugin.min.js"></script> -->
-    <!-- <script src="<?php //echo WHOST; ?>/7os/web-dnav/js/web-dnav.min.js"></script> -->
-    <!-- <script src="<?php //echo WHOST; ?>/7os/web-fader-box/js/web-fader-box.min.js"></script> -->
+    <!-- <script src="<?php //echo WHOST; ?>/7os/plugin-soswapp/js/plugin.min.js"></script> -->
+    <!-- <script src="<?php //echo WHOST; ?>/7os/dnav-soswapp/js/dnav.min.js"></script> -->
+    <!-- <script src="<?php //echo WHOST; ?>/7os/faderbox-soswapp/js/faderbox.min.js"></script> -->
     <!-- project scripts -->
     <script src="<?php echo \html_script ("base.min.js"); ?>"></script>
     <script type="text/javascript">

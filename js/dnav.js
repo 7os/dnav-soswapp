@@ -1,5 +1,5 @@
-/*! 7OS -Web dnav: https://github.com/7os/web-dnav
-  ! Requires 7os/web-theme available @ https://github.com/7os/web-theme
+/*! 7OS -Web dnav: https://github.com/7os/dnav-soswapp
+  ! Requires 7os/theme-soswapp available @ https://github.com/7os/theme-soswapp
 */
 if (typeof sos == 'undefined') window.sos = {}; // Seven OS
 if ( typeof sos.config !== 'object' ) sos.config = {};
@@ -34,7 +34,7 @@ sos.dnav = {
     if ( typeof navList == "object") {
       var valid = sos.dnav.checkNavList(navList);
       if (!valid) {
-        console.error("Invalid navigation list. Kindly reffer/comform to DragNag manual @ https://github.com/7os/web-dnav");
+        console.error("Invalid navigation list. Kindly reffer/comform to DragNag manual @ https://github.com/7os/dnav-soswapp");
         return false;
       }
       sos.config.dnav.navList = valid;

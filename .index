@@ -1,18 +1,18 @@
 {
-  "name" : "7os/web-dnav",
+  "name" : "7os/dnav-soswapp",
   "expression" : [
     {
-      "regex" : "^7os/web-app/?$",
+      "regex" : "^7os/app-soswapp/?$",
       "path" : "/",
       "flag" : ["QSA","NC","L"]
     },
     {
-      "regex" : "^7os/web-app/([a-zA-Z0-9\\-]{3,})/?$",
+      "regex" : "^7os/app-soswapp/([a-zA-Z0-9\\-]{3,})/?$",
       "path" : "/pages/$1.php",
       "flag" : ["QSA","NC","L"]
     },
     {
-      "regex" : "^7os/web-app/(.*)$",
+      "regex" : "^7os/app-soswapp/(.*)$",
       "path" : "/$1",
       "flag" : ["QSA","NC","L"]
     }
