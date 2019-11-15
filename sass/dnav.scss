@@ -42,7 +42,8 @@ $dnav-height : 65px;
       font-size: 1.25em;
       font-family: inherit;
       @include animate-all;
-      &.btn{
+      &.sos-btn{
+        // display: none !important;
         text-align: center;
         background-color: inherit;
         & a{
@@ -67,7 +68,7 @@ $dnav-height : 65px;
           background-color: darken(#ecf0f1,8%);
         }
       }
-      &.current-nav a{
+      &.sos-dnav-current a{
         border-bottom-width: 3px;
         border-bottom-style: solid;
         border-bottom-color: inherit;
@@ -76,12 +77,11 @@ $dnav-height : 65px;
       }
     }
   }
-  #scroll-left, #scroll-right{
+  #sos-dnav-scroll-left, #sos-dnav-scroll-right{
     position: absolute;
     height: $dnav-height;
     width: 45px;
     top: 0;
-    font-family: 'Black Tie';
     font-size: 1.5em;
     padding: 17px 12px;
     font-weight: lighter;
@@ -96,17 +96,11 @@ $dnav-height : 65px;
       cursor: pointer;
     }
   }
-  #scroll-left{
+  #sos-dnav-scroll-left{
     left: 0;
-    &::after{
-      content: '\F092';
-    }
   }
-  #scroll-right{
+  #sos-dnav-scroll-right{
     right: 0;
-    &::after{
-      content: '\F093';
-    }
   }
 
 }
@@ -116,8 +110,8 @@ $dnav-height : 65px;
   overflow-x: scroll;
 }
 @media only screen and (min-width: 81em) {
-  #sos-dnav.show-direction:hover #scroll-left,
-  #sos-dnav.show-direction:hover #scroll-right{
+  #sos-dnav.show-direction:hover #sos-dnav-scroll-left,
+  #sos-dnav.show-direction:hover #sos-dnav-scroll-right{
     display: block !important;
     opacity: 1 !important;
   }
