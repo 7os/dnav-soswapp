@@ -215,7 +215,7 @@ sos.dnav = {
     });
   });
   $(window).scroll(function(){
-    if( $(document).find('#sos-dnav.affix, #sos-dnav.fixed').length > 0 && config.dnav.initop > 0 ){
+    if( $(document).find('#sos-dnav.affix, #sos-dnav.fixed').length > 0 && sos.config.dnav.iniTopPos > 0 ){
       var stickon = $( sos.config.dnav.stickOn );
       var eTop = (stickon.offset().top + stickon.outerHeight()) - $(window).scrollTop();
       eTop = eTop >= sos.config.dnav.top ? eTop : sos.config.dnav.top;

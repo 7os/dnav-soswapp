@@ -42,7 +42,7 @@
   padding: 0;
   margin: 0;
   height: 65px;
-  font-size: 1.25em;
+  font-size: 1.2em;
   font-family: inherit;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -72,7 +72,7 @@
   width: 100%;
   color: inherit;
   display: block;
-  padding: 24px 15px;
+  padding: 22px 15px;
 }
 #sos-dnav ul li a:hover {
   color: inherit;
@@ -82,7 +82,7 @@
   border-bottom-width: 3px;
   border-bottom-style: solid;
   border-bottom-color: inherit;
-  padding-top: 22.5px;
+  padding-top: 20.5px;
   padding-bottom: 22.5px;
 }
 #sos-dnav #sos-dnav-scroll-left, #sos-dnav #sos-dnav-scroll-right {
