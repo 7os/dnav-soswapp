@@ -4,7 +4,7 @@ require_once APP_BASE_INC;
 \TymFrontiers\HTTP\Header::badRequest(true, "No relative path here");
 ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr" manifest="./site.webmanifest">
+<html lang="en" dir="ltr" manifest="<?php echo WHOST; ?>/site.webmanifest">
   <head>
     <meta charset="utf-8">
     <title>7 OS Web - Plugin</title>
