@@ -86,6 +86,12 @@ sos.dnav = {
       $('body').prepend(html);
       sos.dnav.show();
       sos.dnav.showDirection();
+      // trigger \done event
+      $.event.trigger({
+        type:    "dnavLoaded",
+        message: "DragNav loadded successfully.",
+        time:    new Date()
+      });
     } else {
       console.error("No navigation to show");
     }
